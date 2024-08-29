@@ -1,6 +1,6 @@
 # ActionScript reference
 
-ActionScript 3 is the primary general purpose, object-oriented scripting language supported by the Flex, which is based in the ECMAScript fourth edition. Flex supports certain features not contained in the specification.
+ActionScript 3 is the primary general purpose, object-oriented scripting language supported by the Skywhack, which is based in the ECMAScript fourth edition. Skywhack supports certain features not contained in the specification.
 
 ## Specification
 

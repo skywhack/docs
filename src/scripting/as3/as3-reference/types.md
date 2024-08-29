@@ -131,7 +131,7 @@ The non nullable type `T!` is a compile time ensuring that a type does not conta
 
 ## Dictionary type
 
-The `flex.utils.Dictionary` type is a flexible mapping of arbitrary key-value pairs, where the user may access these pairs using common property operators.
+The `sw.utils.Dictionary` type is a flexible mapping of arbitrary key-value pairs, where the user may access these pairs using common property operators.
 
 The `Dictionary` type is safe to use when it comes to solving name ambiguity:
 
@@ -141,7 +141,7 @@ The `Dictionary` type is safe to use when it comes to solving name ambiguity:
 The following program demonstrates the effects of using `Dictionary`:
 
 ```
-import flex.utils.Dictionary;
+import sw.utils.Dictionary;
 
 const dict = new Dictionary();
 dict.x = 10;

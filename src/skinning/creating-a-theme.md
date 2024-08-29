@@ -1,11 +1,11 @@
 # Creating a theme
 
-A theme defines a cascading style sheet that may be applied to the Flex application. A theme is logical, therefore it is an AS file defining a class that extends `flex.skins.Theme`.
+A theme defines a cascading style sheet that may be applied to the Skywhack application. A theme is logical, therefore it is an AS file defining a class that extends `sw.skins.Theme`.
 
 ```as3
 package
 {
-    import flex.skins.*;
+    import sw.skins.*;
     public class HelloWorldTheme extends Theme
     {
     }
@@ -19,7 +19,7 @@ A theme may link a cascading style sheet file for expressing the user interface 
 ```as3
 package
 {
-    import flex.skins.*;
+    import sw.skins.*;
     [Stylesheet(source="style.css")]
     public class HelloWorldTheme extends Theme
     {
@@ -30,7 +30,7 @@ package
 Example cascading style sheet:
 
 ```css
-@namespace fx "http://ns.hydroper.com/flex/2024";
+@namespace fx "http://ns.skywhack.net/2024";
 
 @font-face {
     fontFamily: "Open Sans";

@@ -1,3 +1,3 @@
 # Internal experience
 
-The Flex implementation is split into two main modules: MXMLC and ActionCore.
+The Skywhack implementation is split into two main modules: MXMLC and ActionCore.

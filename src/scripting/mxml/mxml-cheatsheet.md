@@ -1,9 +1,9 @@
 # MXML cheatsheet
 
-## Importing the Flex namespace
+## Importing the Skywhack namespace
 
 ```
-xmlns:fx="http://ns.hydroper.com/flex/2024"
+xmlns:fx="http://ns.skywhack.net/2024"
 ```
 
 ## Importing an ActionScript package as a namespace
