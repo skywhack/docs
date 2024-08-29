@@ -30,7 +30,7 @@ package
 Example cascading style sheet:
 
 ```css
-@namespace fx "http://ns.skywhack.net/2024";
+@namespace sw "http://ns.skywhack.net/2024";
 
 @font-face {
     fontFamily: "Open Sans";
@@ -39,7 +39,7 @@ Example cascading style sheet:
     src: url("opensans.ttf");
 }
 
-fx|Button {
+sw|Button {
     fontFamily: "Open Sans";
 }
 ```

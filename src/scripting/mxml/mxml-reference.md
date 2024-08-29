@@ -11,9 +11,9 @@ Given that the SkyWhack manifest defines `source[0].path = "src"`, the following
 ```mxml
 <!-- src/com/company/max/WeatherScreen.mxml -->
 <?xml version="1.0"?>
-<fx:HGroup xmlns:fx="http://ns.skywhack.net/2024">
-    <fx:Label variant="heading" value="Weather"/>
-</fx:HGroup>
+<sw:HGroup xmlns:sw="http://ns.skywhack.net/2024">
+    <sw:Label variant="heading" value="Weather"/>
+</sw:HGroup>
 ```
 
 ## fx prefix
@@ -22,13 +22,13 @@ The convention is to assign the `fx` prefix as the URI `http://ns.skywhack.net/2
 
 ## &lt;i:Script/&gt;
 
-The `<fx:Script/>` element is used for defining properties and methods inside the component using the ActionScript language.
+The `<sw:Script/>` element is used for defining properties and methods inside the component using the ActionScript language.
 
 ```mxml
 <?xml version="1.0"?>
-<fx:HGroup xmlns:fx="http://ns.skywhack.net/2024">
-    <fx:Script><![CDATA[
+<sw:HGroup xmlns:sw="http://ns.skywhack.net/2024">
+    <sw:Script><![CDATA[
         // definitions
-    ]]></fx:Script>
-</fx:HGroup>
+    ]]></sw:Script>
+</sw:HGroup>
 ```
