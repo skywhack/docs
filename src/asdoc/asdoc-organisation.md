@@ -1,6 +1,6 @@
 # ASDoc organisation
 
-A Skywhack package may include an ASDoc organisation file (`asdoc.json`) which links files to be included and sections to be rendered during ASDoc compilation.
+A SkyWhack package may include an ASDoc organisation file (`asdoc.json`) which links files to be included and sections to be rendered during ASDoc compilation.
 
 ## Example
 

@@ -1,6 +1,6 @@
 # Creating a theme
 
-A theme defines a cascading style sheet that may be applied to the Skywhack application. A theme is logical, therefore it is an AS file defining a class that extends `sw.skins.Theme`.
+A theme defines a cascading style sheet that may be applied to the SkyWhack application. A theme is logical, therefore it is an AS file defining a class that extends `sw.skins.Theme`.
 
 ```as3
 package

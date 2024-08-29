@@ -1,12 +1,12 @@
 # Manifest file
 
-The Skywhack manifest is a TOML file with the name `sw.toml`, placed in the top directory of a project, that describes an optional Skywhack workspace and a Skywhack package.
+The SkyWhack manifest is a TOML file with the name `sw.toml`, placed in the top directory of a project, that describes an optional SkyWhack workspace and a SkyWhack package.
 
 ## Examples
 
 ### Client application
 
-The Skywhack manifest for a client side application looks like the following:
+The SkyWhack manifest for a client side application looks like the following:
 
 ```toml
 [package]
@@ -25,7 +25,7 @@ enable = true
 
 ### Library
 
-The Skywhack manifest for a library looks like the following:
+The SkyWhack manifest for a library looks like the following:
 
 ```toml
 [package]
@@ -44,7 +44,7 @@ include = true
 
 ### Server application
 
-The Skywhack manifest for a server side application looks like the following:
+The SkyWhack manifest for a server side application looks like the following:
 
 ```toml
 [package]
@@ -65,7 +65,7 @@ main-class = "example.Example"
 
 ### Workspace
 
-The Skywhack manifest for a workspace that consists of multiple packages looks like the following:
+The SkyWhack manifest for a workspace that consists of multiple packages looks like the following:
 
 ```toml
 [workspace]
@@ -77,7 +77,7 @@ members = [
 
 ## Build script
 
-The Skywhack manifest may link a script that runs before the sources of a Skywhack package are compiled.
+The SkyWhack manifest may link a script that runs before the sources of a SkyWhack package are compiled.
 
 ```toml
 [[build-script.source]]
@@ -87,7 +87,7 @@ include = true
 
 ## JavaScript
 
-The Skywhack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be loaded right before the ActionScript environment. The `import-declaration` field must provide highly specific aliases to prevent name conflict.
+The SkyWhack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be loaded right before the ActionScript environment. The `import-declaration` field must provide highly specific aliases to prevent name conflict.
 
 ```toml
 [[js]]

@@ -1,6 +1,6 @@
 # MXML cheatsheet
 
-## Importing the Skywhack namespace
+## Importing the SkyWhack namespace
 
 ```
 xmlns:fx="http://ns.skywhack.net/2024"

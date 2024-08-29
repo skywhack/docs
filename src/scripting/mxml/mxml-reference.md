@@ -6,7 +6,7 @@ MXML is an eXtensible Markup Language used for expressing user interface compone
 
 A MXML file shall have a filename that identifies the name of the ActionScript class that it defines, while the parent directories after a source path determine the ActionScript package it belongs to.
 
-Given that the Skywhack manifest defines `source[0].path = "src"`, the following is an example MXML file defining the class `com.company.max.WeatherScreen`:
+Given that the SkyWhack manifest defines `source[0].path = "src"`, the following is an example MXML file defining the class `com.company.max.WeatherScreen`:
 
 ```mxml
 <!-- src/com/company/max/WeatherScreen.mxml -->
@@ -18,7 +18,7 @@ Given that the Skywhack manifest defines `source[0].path = "src"`, the following
 
 ## fx prefix
 
-The convention is to assign the `fx` prefix as the URI `http://ns.skywhack.net/2024`, identifying the Skywhack elements and component set.
+The convention is to assign the `fx` prefix as the URI `http://ns.skywhack.net/2024`, identifying the SkyWhack elements and component set.
 
 ## &lt;i:Script/&gt;
 

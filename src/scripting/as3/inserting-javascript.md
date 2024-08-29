@@ -51,7 +51,7 @@ construct(o, arg1, arg2);
 
 The JavaScript host environment is expected to be either a W3C compatible environment or a Node.js compatible environment.
 
-The JavaScript environment is cluttered with several classes, constants, and methods from the [ActionCore](https://github.com/skywhack/actioncore) library as well as linked libraries. They are lexically available as that allows for name mangling in release builds of a Skywhack application.
+The JavaScript environment is cluttered with several classes, constants, and methods from the [ActionCore](https://github.com/skywhack/actioncore) library as well as linked libraries. They are lexically available as that allows for name mangling in release builds of a SkyWhack application.
 
 There are two special ActionScript configuration constants `ENV::W3C` and `ENV::NODE`, which are each set to either false or true, which indicate the web browser and Node.js platforms respectively.
 
@@ -62,7 +62,7 @@ trace("node", ENV::NODE ? "in node" : "not in node");
 
 ## Importing a JavaScript file
 
-The Skywhack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be imported before the ActionScript environment.
+The SkyWhack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be imported before the ActionScript environment.
 
 ```toml
 [[js]]
