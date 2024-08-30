@@ -5,12 +5,12 @@ ActionScript is converted into JavaScript code during compilation step in a hybr
 The following example invokes a JavaScript closure by passing a string parameter to it and assigning its resulting object into a variable:
 
 ```
-import sw.externals.js.iifee;
+import whack.externals.js.iifee;
 
 var msg:String = "Hello, world!";
 
 // Immediately invoked function expression
-var obj:* = sw.externals.js.iife(<![CDATA[
+var obj:* = whack.externals.js.iife(<![CDATA[
     alert(msg);
     return {x: 0, y: 0};
 ]]>, msg);
@@ -22,28 +22,28 @@ trace(obj.x, obj.y);
 The following example accesses the global `Math` object:
 
 ```
-import sw.externals.js.lex;
-trace(sw.externals.js.lex("Math").random());
+import whack.externals.js.lex;
+trace(whack.externals.js.lex("Math").random());
 ```
 
 The following snippet accesses a property using common JavaScript operators:
 
 ```
-import sw.externals.js.get;
-import sw.externals.js.set;
+import whack.externals.js.get;
+import whack.externals.js.set;
 
 // get
-const $ = sw.externals.js.get(o, k);
+const $ = whack.externals.js.get(o, k);
 // set
-sw.externals.js.set(o, k, v);
+whack.externals.js.set(o, k, v);
 
-sw.externals.js.callkey(o, k, arg1, arg2);
+whack.externals.js.callkey(o, k, arg1, arg2);
 ```
 
 The following snippet results into the JavaScript `new` operator:
 
 ```
-import sw.externals.js.construct;
+import whack.externals.js.construct;
 construct(o, arg1, arg2);
 ```
 
@@ -51,7 +51,7 @@ construct(o, arg1, arg2);
 
 The JavaScript host environment is expected to be either a W3C compatible environment or a Node.js compatible environment.
 
-The JavaScript environment is cluttered with several classes, constants, and methods from the [ActionCore](https://github.com/skywhack/actioncore) library as well as linked libraries. They are lexically available as that allows for name mangling in release builds of a SkyWhack application.
+The JavaScript environment is cluttered with several classes, constants, and methods from the [ActionCore](https://github.com/whackengine/actioncore) library as well as linked libraries. They are lexically available as that allows for name mangling in release builds of a Whack application.
 
 There are two special ActionScript configuration constants `ENV::W3C` and `ENV::NODE`, which are each set to either false or true, which indicate the web browser and Node.js platforms respectively.
 
@@ -62,7 +62,7 @@ trace("node", ENV::NODE ? "in node" : "not in node");
 
 ## Importing a JavaScript file
 
-The SkyWhack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be imported before the ActionScript environment.
+The Whack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be imported before the ActionScript environment.
 
 ```toml
 [[js]]

@@ -1,9 +1,9 @@
 # MXML cheatsheet
 
-## Importing the SkyWhack namespace
+## Importing the Whack namespace
 
 ```
-xmlns:sw="http://ns.skywhack.net/2024"
+xmlns:w="http://ns.whack.net/2024"
 ```
 
 ## Importing an ActionScript package as a namespace
@@ -33,18 +33,18 @@ click="trace('click event:', event);"
 ## Inserting XHTML
 
 ```mxml
-<sw:xhtml>
+<w:xhtml>
     <h1>Title</h1>
     <p>Paragraph <b>number</b> <i>1</i></p>
     <ul>
         <li>Item a.</li>
         <li>Item b. {password.text}</li>
     </ul>
-</sw:xhtml>
+</w:xhtml>
 ```
 
 ## Inserting HTML
 
 ```mxml
-<sw:html value="{html_source.value}"/>
+<w:html value="{html_source.value}"/>
 ```

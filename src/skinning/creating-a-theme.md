@@ -1,11 +1,11 @@
 # Creating a theme
 
-A theme defines a cascading style sheet that may be applied to the SkyWhack application. A theme is logical, therefore it is an AS file defining a class that extends `sw.skins.Theme`.
+A theme defines a cascading style sheet that may be applied to the Whack application. A theme is logical, therefore it is an AS file defining a class that extends `whack.skins.Theme`.
 
 ```as3
 package
 {
-    import sw.skins.*;
+    import whack.skins.*;
     public class HelloWorldTheme extends Theme
     {
     }
@@ -19,7 +19,7 @@ A theme may link a cascading style sheet file for expressing the user interface 
 ```as3
 package
 {
-    import sw.skins.*;
+    import whack.skins.*;
     [Stylesheet(source="style.css")]
     public class HelloWorldTheme extends Theme
     {
@@ -30,7 +30,7 @@ package
 Example cascading style sheet:
 
 ```css
-@namespace sw "http://ns.skywhack.net/2024";
+@namespace w "http://ns.whack.net/2024";
 
 @font-face {
     fontFamily: "Open Sans";
@@ -39,7 +39,7 @@ Example cascading style sheet:
     src: url("opensans.ttf");
 }
 
-sw|Button {
+w|Button {
     fontFamily: "Open Sans";
 }
 ```

@@ -7,9 +7,9 @@ Cascading Style Sheet (CSS) is a subset of the world wide web Cascading Style Sh
 The following sheet customizes the font family and weight of `Label` objects that are heading titles:
 
 ```css
-@namespace sw "http://ns.skywhack.net/2024";
+@namespace w "http://ns.whack.net/2024";
 
-sw|Label[variant=heading] {
+w|Label[variant=heading] {
     fontFamily: segoe ui, sans;
     fontWeight: lighter;
 }

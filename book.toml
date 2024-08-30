@@ -3,7 +3,7 @@ authors = ["Matheus Dias de Souza <hydroperfox@gmail.com>"]
 language = "en"
 multilingual = false
 src = "src"
-title = "SkyWhack"
+title = "Whack"
 
 [output.html]
 copy-fonts = false

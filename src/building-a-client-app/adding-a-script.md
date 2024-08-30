@@ -1,27 +1,27 @@
 # Adding a script
 
-MXML files insert ActionScript code through a `<sw:Script>` tag containing code inside a `<![CDATA[ ... ]]>` markup.
+MXML files insert ActionScript code through a `<w:Script>` tag containing code inside a `<![CDATA[ ... ]]>` markup.
 
 ```mxml
 <!-- src/com/example/ExampleApplication.mxml -->
 <?xml version="1.0"?>
-<sw:Application xmlns:sw="http://ns.skywhack.net/2024">
-    <sw:Script><![CDATA[
+<w:Application xmlns:w="http://ns.whack.net/2024">
+    <w:Script><![CDATA[
         // ActionScript
-    ]]></sw:Script>
-</sw:Application>
+    ]]></w:Script>
+</w:Application>
 ```
 
-For initialiser code, handle the `creationComplete` event in the `<sw:Application>` tag:
+For initialiser code, handle the `creationComplete` event in the `<w:Application>` tag:
 
 ```mxml
 <?xml version="1.0"?>
-<sw:Application xmlns:sw="http://ns.skywhack.net/2024" creationComplete="initialise()">
-    <sw:Script><![CDATA[
+<w:Application xmlns:w="http://ns.whack.net/2024" creationComplete="initialise()">
+    <w:Script><![CDATA[
         private function initialise():void
         {
             trace("Hello world");
         }
-    ]]></sw:Script>
-</sw:Application>
+    ]]></w:Script>
+</w:Application>
 ```

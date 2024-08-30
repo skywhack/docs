@@ -1,3 +1,3 @@
 # Internal experience
 
-The SkyWhack implementation is split into two main modules: MXMLC and ActionCore.
+The Whack implementation is split into two main modules: MXMLC and ActionCore.

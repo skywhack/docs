@@ -1,6 +1,6 @@
 # ActionScript reference
 
-ActionScript 3 is the primary general purpose, object-oriented scripting language supported by the SkyWhack, which is based in the ECMAScript fourth edition. SkyWhack supports certain features not contained in the specification.
+ActionScript 3 is the primary general purpose, object-oriented scripting language supported by the Whack, which is based in the ECMAScript fourth edition. Whack supports certain features not contained in the specification.
 
 ## Specification
 
