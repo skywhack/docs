@@ -12,7 +12,7 @@ MXML files insert ActionScript code through a `<sw:Script>` tag containing code 
 </sw:Application>
 ```
 
-For initialiser code, handle the `creationComplete` event in the `s:Page` tag:
+For initialiser code, handle the `creationComplete` event in the `<sw:Application>` tag:
 
 ```mxml
 <?xml version="1.0"?>
