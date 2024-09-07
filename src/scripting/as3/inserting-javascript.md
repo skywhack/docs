@@ -5,12 +5,12 @@ ActionScript is converted into JavaScript code during compilation step in a hybr
 The following example invokes a JavaScript closure by passing a string parameter to it and assigning its resulting object into a variable:
 
 ```
-import whack.externals.js.iifee;
+import whack.js.iifee;
 
 var msg:String = "Hello, world!";
 
 // Immediately invoked function expression
-var obj:* = whack.externals.js.iife(<![CDATA[
+var obj:* = whack.js.iife(<![CDATA[
     alert(msg);
     return {x: 0, y: 0};
 ]]>, msg);
@@ -22,28 +22,28 @@ trace(obj.x, obj.y);
 The following example accesses the global `Math` object:
 
 ```
-import whack.externals.js.lex;
-trace(whack.externals.js.lex("Math").random());
+import whack.js.lex;
+trace(whack.js.lex("Math").random());
 ```
 
 The following snippet accesses a property using common JavaScript operators:
 
 ```
-import whack.externals.js.get;
-import whack.externals.js.set;
+import whack.js.get;
+import whack.js.set;
 
 // get
-const $ = whack.externals.js.get(o, k);
+const $ = whack.js.get(o, k);
 // set
-whack.externals.js.set(o, k, v);
+whack.js.set(o, k, v);
 
-whack.externals.js.callkey(o, k, arg1, arg2);
+whack.js.callkey(o, k, arg1, arg2);
 ```
 
 The following snippet results into the JavaScript `new` operator:
 
 ```
-import whack.externals.js.construct;
+import whack.js.construct;
 construct(o, arg1, arg2);
 ```
 
