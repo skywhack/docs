@@ -20,7 +20,7 @@ A theme may link a cascading style sheet file for expressing the user interface 
 package
 {
     import whack.skins.*;
-    [Stylesheet(source="style.css")]
+    [StyleSheet(source="style.css")]
     public class HelloWorldTheme extends Theme
     {
     }
