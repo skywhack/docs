@@ -19,6 +19,7 @@ include = true
 
 [client-side]
 enable = true
+main-class = "example.Example"
 
 [dependencies]
 ```
