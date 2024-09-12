@@ -17,7 +17,7 @@ version = "0.1.0"
 path = "src"
 include = true
 
-[client-application]
+[client-side]
 enable = true
 
 [dependencies]
@@ -55,7 +55,7 @@ version = "0.1.0"
 path = "src"
 include = true
 
-[server-application]
+[server-side]
 enable = true
 executable-name = "example"
 main-class = "example.Example"
