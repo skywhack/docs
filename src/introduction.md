@@ -1,3 +1,3 @@
 # Introduction
 
-Whack enables creating apps, games and servers using the ActionScript and MXML languages.
+Create apps, games and servers in ActionScript.
