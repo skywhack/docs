@@ -59,7 +59,6 @@ include = true
 [server-side]
 enable = true
 executable-name = "example"
-main-class = "example.Example"
 
 [dependencies]
 ```
