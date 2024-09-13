@@ -115,14 +115,24 @@ a > .hljs {
 .mobile-nav-chapters:visited,
 .menu-bar .icon-button,
 .menu-bar a i {
-    color: var(--icons);
+    color: #121212;
+}
+
+.mobile-nav-chapters {
+    background: linear-gradient(-180deg, rgba(145,145,145,1) 0%, rgba(96,96,96,1) 100%);
+    color: #fff;
+}
+
+.mobile-nav-chapters:hover {
+    background: linear-gradient(-180deg, rgba(82,82,82,1) 0%, rgba(61,61,61,1) 100%);
+    color: #fff;
 }
 
 .menu-bar i:hover,
 .menu-bar .icon-button:hover,
 .nav-chapters:hover,
 .mobile-nav-chapters i:hover {
-    color: var(--icons-hover);
+    color: #111;
 }
 
 /* Nav Icons */
