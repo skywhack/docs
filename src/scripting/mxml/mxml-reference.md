@@ -16,11 +16,11 @@ Given that the Whack manifest defines `source[0].path = "src"`, the following is
 </w:HGroup>
 ```
 
-## fx prefix
+## w prefix
 
-The convention is to assign the `fx` prefix as the URI `http://ns.whack.net/2024`, identifying the Whack elements and component set.
+The convention is to assign the `w` prefix as the URI `http://ns.whack.net/2024`, identifying the Whack elements and component set.
 
-## &lt;i:Script/&gt;
+## &lt;w:Script/&gt;
 
 The `<w:Script/>` element is used for defining properties and methods inside the component using the ActionScript language.
 

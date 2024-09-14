@@ -43,8 +43,8 @@
     --warning-border: #ff8e00;
 
     --table-border-color: hsl(0, 0%, 95%);
-    --table-header-bg: hsl(0, 0%, 80%);
-    --table-alternate-bg: hsl(0, 0%, 97%);
+    --table-header-bg: rgba(255, 255, 255, 0.3);
+    --table-alternate-bg: rgba(255, 255, 255, 0.3);
 
     --searchbar-border-color: #aaa;
     --searchbar-bg: #000;
