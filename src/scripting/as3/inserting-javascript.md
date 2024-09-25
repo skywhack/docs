@@ -1,50 +1,32 @@
 # Inserting JavaScript
 
-ActionScript is converted into JavaScript code during compilation step in a hybrid manner, where it is allowed for specific JavaScript code to be inserted in a closure call. The target audience for this section are third party library developers.
+ActionScript is converted into JavaScript code during compilation step in a hybrid manner. The target audience for this section are third party library developers.
+
+Many of the functions mentioned in this section are not necessary as ActionScript can access JavaScript objects using its native operators, except for lexical references.
 
 The following example invokes a JavaScript closure by passing a string parameter to it and assigning its resulting object into a variable:
-
-```
-import whack.jscript.iifee;
-
-var msg:String = "Hello, world!";
-
-// Immediately invoked function expression
-var obj:* = whack.jscript.iife(<![CDATA[
-    alert(msg);
-    return {x: 0, y: 0};
-]]>, msg);
-
-trace(obj.x, obj.y);
-// 0  0
-```
 
 The following example accesses the global `Math` object:
 
 ```
-import whack.jscript.lex;
-trace(whack.jscript.lex("Math").random());
+trace(JS.lex("Math").random());
 ```
 
-The following snippet accesses a property using common JavaScript operators:
+The following snippet accesses a property using native JavaScript operators for performance, even though ActionScript operators also support JavaScript properties.
 
 ```
-import whack.jscript.get;
-import whack.jscript.set;
-
 // get
-const $ = whack.jscript.get(o, k);
+const $ = JS.get(o, k);
 // set
-whack.jscript.set(o, k, v);
+JS.set(o, k, v);
 
-whack.jscript.callkey(o, k, arg1, arg2);
+JS.callk(o, k, arg1, arg2);
 ```
 
 The following snippet results into the JavaScript `new` operator:
 
 ```
-import whack.jscript.construct;
-construct(o, arg1, arg2);
+JS.construct(o, arg1, arg2);
 ```
 
 ## JavaScript environment
@@ -53,19 +35,21 @@ The JavaScript host environment is expected to be either a W3C compatible enviro
 
 The JavaScript environment is cluttered with several classes, constants, and methods from the [ActionCore](https://github.com/whackengine/actioncore) library as well as linked libraries. They are lexically available as that allows for name mangling in release builds of a Whack application.
 
-There are two special ActionScript configuration constants `ENV::W3C` and `ENV::NODE`, which are each set to either false or true, which indicate the web browser and Node.js platforms respectively.
+There are two special ActionScript configuration constants `RT::CLIENT` and `RT::SERVER`, which are each set to either false or true, which indicate the web browser and Node.js platforms respectively.
 
 ```
-trace("browser:", ENV::W3C ? "in browser" : "not in browser");
-trace("node", ENV::NODE ? "in node" : "not in node");
+trace("browser:", RT::CLIENT ? "in browser" : "not in browser");
+trace("node", RT::SERVER ? "in node" : "not in node");
 ```
 
 ## Importing a JavaScript file
 
-The Whack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be imported before the ActionScript environment.
+The Whack manifest may specify multiple `[[javascript]]` sections linking a JavaScript file to be imported before the ActionScript environment.
 
 ```toml
-[[js]]
+[[javascript]]
 path = "pixi.min.js"
 import-declaration = 'import * as PIXI from "pixi.js";'
+# client-side = true
+# server-side = true
 ```

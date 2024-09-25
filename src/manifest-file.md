@@ -87,10 +87,20 @@ include = true
 
 ## JavaScript
 
-The Whack manifest may specify multiple `[[js]]` sections linking a JavaScript file to be loaded right before the ActionScript environment. The `import-declaration` field must provide highly specific aliases to prevent name conflict.
+The Whack manifest may specify multiple `[[javascript]]` sections linking a JavaScript file to be loaded right before the ActionScript environment. The `import-declaration` field must provide highly specific aliases to prevent name conflict.
 
 ```toml
-[[js]]
+[[javascript]]
 path = "lib.min.js"
 import-declaration = 'import * as lib from "./lib.min.js";'
+```
+
+The `[[javascript]]` section may be designed exclusive to either the client side or server side:
+
+```toml
+[[javascript]]
+path = "lib.min.js"
+import-declaration = 'import * as lib from "./lib.min.js";'
+# client-side = true
+# server-side = true
 ```
