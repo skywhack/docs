@@ -4,8 +4,6 @@ ActionScript is converted into JavaScript code during compilation step in a hybr
 
 Many of the functions mentioned in this section are not necessary as ActionScript can access JavaScript objects using its native operators, except for lexical references.
 
-The following example invokes a JavaScript closure by passing a string parameter to it and assigning its resulting object into a variable:
-
 The following example accesses the global `Math` object:
 
 ```
