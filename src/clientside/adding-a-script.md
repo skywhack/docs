@@ -16,7 +16,9 @@ For initialiser code, handle the `creationComplete` event in the `<w:Application
 
 ```mxml
 <?xml version="1.0"?>
-<w:Application xmlns:w="http://ns.whack.net/2024" creationComplete="initialise()">
+<w:Application
+    xmlns:w="http://ns.whack.net/2024"
+    creationComplete="initialise()">
     <w:Script><![CDATA[
         private function initialise():void
         {
