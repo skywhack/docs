@@ -7,7 +7,7 @@ Event class:
 ```as3
 package
 {
-    import flash.events.*;
+    import whack.events.*;
 
     public class HelloWorldEvent extends Event
     {
@@ -26,7 +26,7 @@ Event dispatcher:
 ```as3
 package
 {
-    import flash.events.*;
+    import whack.events.*;
 
     /**
      * @eventType HelloWorldEvent.TRIGGER
