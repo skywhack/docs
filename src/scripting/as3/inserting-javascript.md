@@ -7,24 +7,7 @@ Many of the functions mentioned in this section are not necessary as ActionScrip
 The following example accesses the global `Math` object:
 
 ```
-trace(JS.lex("Math").random());
-```
-
-The following snippet accesses a property using native JavaScript operators for performance, even though ActionScript operators also support JavaScript properties.
-
-```
-// get
-const $ = JS.get(o, k);
-// set
-JS.set(o, k, v);
-
-JS.callk(o, k, arg1, arg2);
-```
-
-The following snippet results into the JavaScript `new` operator:
-
-```
-JS.construct(o, arg1, arg2);
+trace(JS.lexical("Math").random());
 ```
 
 ## JavaScript environment
